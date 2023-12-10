@@ -48,7 +48,7 @@ def get_schematic_details(schematic_lines):
                 col += 1
 
     gear_ratios = [reduce(lambda a, b: a * b, part_number_list)
-                   for part_number_list in gears.values() if len(part_number_list) > 1]
+                   for part_number_list in gears.values() if len(part_number_list) == 2]
     return part_numbers, gear_ratios
 
 
