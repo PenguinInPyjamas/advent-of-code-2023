@@ -52,7 +52,6 @@ def get_focusing_power(seq):
                 new_box.append(new_lens)
             boxes[box_num] = new_box
     focusing_power = 0
-    # print(boxes)
     for box_num, box in enumerate(boxes):
         for lens_num, lens in enumerate(box):
             focusing_power += (box_num + 1) * (lens_num + 1) * lens.power
